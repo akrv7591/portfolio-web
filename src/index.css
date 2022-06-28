@@ -37,6 +37,10 @@ html.dark {
   @apply dark:text-secondary hover:dark:text-primary;
 }
 
+.nav-link.active {
+  @apply text-primary;
+}
+
 .nav-link::after {
   content: "";
   height: 2px;

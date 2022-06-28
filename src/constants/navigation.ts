@@ -4,15 +4,15 @@ export const navigationList = [
     label: "Home",
     to: "/",
   },
-  {
-    id: 2,
-    label: "About",
-    to: "/about",
-  },
+  // {
+  //   id: 2,
+  //   label: "About",
+  //   to: "/about",
+  // },
   {
     id: 3,
-    label: "Blog",
-    to: "/blog",
+    label: "Blogs",
+    to: "/blogs",
   },
   {
     id: 4,

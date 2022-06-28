@@ -16,7 +16,7 @@ const Navigation = () => {
           <NavLink
             key={navigation.id}
             to={navigation.to}
-            className={(isActive) => (isActive ? "nav-link text-primary" : "nav-link")}
+            className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
           >
             {navigation.label}
           </NavLink>
