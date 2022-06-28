@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useLayoutEffect, useState } from "react";
 
 export type Themes = "light" | "dark" | "system" | undefined;
 type ThemeProps = {
@@ -21,7 +21,7 @@ const getTheme = () => {
 export const ThemeProvider = ({ children }: { children: JSX.Element }) => {
   const [theme, setTheme] = useState<Themes>(getTheme());
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (theme === "system") {
       localStorage.removeItem("theme");
     } else {

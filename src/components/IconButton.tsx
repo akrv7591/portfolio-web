@@ -1,7 +1,7 @@
-import { HTMLAttributes } from "react";
+import { HTMLAttributes, ReactNode } from "react";
 
 type Props = HTMLAttributes<HTMLDivElement> & {
-  children: any;
+  children: ReactNode;
 };
 
 const IconButton = ({ children, ...divAttributes }: Props) => {

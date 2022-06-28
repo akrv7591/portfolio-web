@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IoMenuOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { navigationList } from "../constants/navigation";
 import IconButton from "./IconButton";
 import NavigationModal from "./modals/NavigationModal";
 import ThemeSelect from "./ThemeSelect";
@@ -9,20 +10,17 @@ const Navigation = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="z-20">
-      <NavigationModal open={open} onClose={() => setOpen(false)} />
+      {open && <NavigationModal open={open} onClose={() => setOpen(false)} />}
       <div className="hidden sm:flex  items-center space-x-10 justify-end">
-        <Link to={"/#"} className={"nav-link"}>
-          Home
-        </Link>
-        <Link to={"/#"} className={"nav-link"}>
-          About{" "}
-        </Link>
-        <Link to={"/#"} className={"nav-link"}>
-          Blog
-        </Link>
-        <Link to={"/#"} className={"nav-link"}>
-          Portfolio
-        </Link>
+        {navigationList.map((navigation) => (
+          <NavLink
+            key={navigation.id}
+            to={navigation.to}
+            className={(isActive) => (isActive ? "nav-link text-primary" : "nav-link")}
+          >
+            {navigation.label}
+          </NavLink>
+        ))}
         <ThemeSelect />
       </div>
       <div className="flex sm:hidden w-full justify-end">

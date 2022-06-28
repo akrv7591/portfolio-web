@@ -10,7 +10,7 @@
 
 html {
   transition-duration: 0.5s;
-  @apply bg-secondary;
+  @apply bg-white;
 }
 
 html.dark {
@@ -20,6 +20,15 @@ html.dark {
 .text {
   @apply text-secondary-dark;
   @apply dark:text-secondary;
+}
+
+.btn {
+  @apply text-secondary px-8 w-fit py-1 rounded-bl-none bg-primary rounded-full;
+  @apply hover:bg-primary/80;
+}
+
+.dev-border {
+  @apply border border-pink-500;
 }
 
 .nav-link {
