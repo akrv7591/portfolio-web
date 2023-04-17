@@ -1,9 +1,41 @@
+import {
+  IconBrandFacebook, IconBrandGithub, IconBrandInstagram,
+  IconBrandJavascript, IconBrandLinkedin,
+  IconBrandMysql,
+  IconBrandNpm,
+  IconBrandReact, IconBrandTwitter
+} from "@tabler/icons-react";
+
 export const USER_DETAIL = {
   username: "Abubakr Khabebulloev",
-  role: "Web and mobile developer",
+  role: "I am a fullstack Web developer currently living in Busan. I enjoy learning new technologies",
   currentLocation: "Busan, South Korea",
-  phoneNumber: "+8210-5886-9717",
-  email: "akrv7591@gmail.com",
+  socials: [{
+    id: 0,
+    label: "Facebook",
+    icon: IconBrandFacebook,
+    url: "#"
+  },{
+    id: 1,
+    label: "LinkedIn",
+    icon: IconBrandLinkedin,
+    url: "#"
+  },{
+    id: 2,
+    label: "Github",
+    icon: IconBrandGithub,
+    url: "#"
+  },{
+    id: 3,
+    label: "Instagram",
+    icon: IconBrandInstagram,
+    url: "#"
+  },{
+    id: 4,
+    label: "Twitter",
+    icon: IconBrandTwitter,
+    url: "#"
+  }],
   socialLink: {
     facebook: "",
     linkedIn: "",
@@ -13,3 +45,31 @@ export const USER_DETAIL = {
     github: "",
   },
 };
+
+const languages = [{
+  label: "JavaScript",
+  icon: IconBrandJavascript,
+}]
+
+const frontend = [{
+  label: "React",
+  icon: IconBrandReact
+}]
+
+const backend = [{
+  label: "NodeJs",
+  icon: IconBrandNpm
+}]
+
+const db = [{
+  label: "MySql",
+  icon: IconBrandMysql
+}]
+
+
+export const stacks = [{
+  languages,
+  frontend,
+  backend,
+  db
+}]

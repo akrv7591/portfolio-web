@@ -1,12 +1,17 @@
+import { HelmetProvider } from "react-helmet-async";
 import { ThemeProvider } from "./providers/ThemeProvider";
 import RootRouter from "./routers/RootRouter";
+import Mantine from "./providers/Mantine";
+import "./index.css"
 
-function App() {
+export default function App() {
   return (
     <ThemeProvider>
-      <RootRouter />
+      <Mantine>
+        <HelmetProvider>
+          <RootRouter />
+        </HelmetProvider>
+      </Mantine>
     </ThemeProvider>
   );
 }
-
-export default App;

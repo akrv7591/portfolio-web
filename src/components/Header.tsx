@@ -1,19 +1,104 @@
 import Logo from "./Logo";
 import Navigation from "./Navigation";
+import {
+  Burger,
+  Container,
+  createStyles,
+  Flex,
+  Header as MantineHeader,
+  Paper,
+  rem,
+  Switch,
+  Transition,
+} from '@mantine/core';
+import {useDisclosure} from '@mantine/hooks';
+import React from "react";
+import {IconMoonStars, IconSun} from "@tabler/icons-react";
+import {useTheme} from "../providers/ThemeProvider";
+import {useLocation} from "react-router-dom";
 
-const Header = () => {
+const HEADER_HEIGHT = rem(60);
+export default function Header() {
+  const {classes} = useStyles();
+  const theme = useTheme()
+  const [opened, {toggle, close}] = useDisclosure(false);
+  const location = useLocation()
+
+  React.useEffect(() => {
+    close()
+  }, [location])
+
   return (
-    <div className="w-full h-20 justify-center align-middle">
-      <div className="container  mx-auto grid grid-cols-2 items-center py-5 px-5 sm:px-0 ">
-        <div className="">
-          <Logo />
-        </div>
-        <div className="">
-          <Navigation />
-        </div>
-      </div>
-    </div>
+    <MantineHeader height={HEADER_HEIGHT} mb={60} fixed className={classes.root}>
+      <Container className={classes.header} fluid mx={60}>
+        <Logo/>
+        <Flex columnGap={"30px"} className={classes.links}>
+          <Navigation/>
+        </Flex>
+        <Switch
+          checked={theme.theme === "dark"}
+          onChange={theme.toggle}
+          color="brand"
+          size="lg"
+          onLabel={<IconSun size="1.25rem" stroke={1.5} cursor={"pointer"}/>}
+          offLabel={<IconMoonStars size="1.25rem" stroke={1.5} cursor={"pointer"}/>}
+        />
+        <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm"/>
+        <Transition transition="pop-top-right" duration={200} mounted={opened}>
+          {(styles) => (
+            <Paper className={classes.dropdown} withBorder style={styles}>
+              <Flex direction={"column"} rowGap={"20px"}>
+                <Navigation/>
+              </Flex>
+            </Paper>
+          )}
+        </Transition>
+      </Container>
+    </MantineHeader>
   );
 };
 
-export default Header;
+const useStyles = createStyles((theme) => ({
+  root: {
+    zIndex: 1,
+  },
+
+  dropdown: {
+    position: 'absolute',
+    top: HEADER_HEIGHT,
+    left: 0,
+    right: 0,
+    zIndex: 0,
+    borderTopRightRadius: 0,
+    borderTopLeftRadius: 0,
+    borderTopWidth: 0,
+    padding: "20px",
+    overflow: 'hidden',
+
+    [theme.fn.largerThan('sm')]: {
+      display: 'none',
+    },
+  },
+
+  header: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    height: '100%',
+  },
+
+  links: {
+    [theme.fn.smallerThan('sm')]: {
+      display: 'none',
+    },
+  },
+
+  burger: {
+    [theme.fn.largerThan('sm')]: {
+      display: 'none',
+    },
+  },
+
+}));
+
+

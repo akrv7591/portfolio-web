@@ -1,7 +1,7 @@
 import Lottie from "lottie-react";
 import { Link } from "react-router-dom";
 import * as NotFound404 from "../../assets/lottie/404.json";
-import Text from "../../components/Text";
+import { Text } from "@mantine/core";
 
 const NotFound = () => {
   return (

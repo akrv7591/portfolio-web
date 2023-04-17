@@ -3,15 +3,15 @@ import { Text } from "@mantine/core";
 
 type Props = {};
 
-const Portfolio = (props: Props) => {
+const Hobbies = (props: Props) => {
   return (
     <div>
       <Helmet>
-        <title>Portfolio</title>
+        <title>Hobbies</title>
       </Helmet>
-      <Text>Portfolio</Text>
+      <Text>Hobbies</Text>
     </div>
   );
 };
 
-export default Portfolio;
+export default Hobbies;

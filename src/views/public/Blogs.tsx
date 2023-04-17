@@ -1,10 +1,14 @@
-import Text from "../../components/Text";
+import { Helmet } from "react-helmet";
+import { Text } from "@mantine/core";
 
 type Props = {};
 
-const Blogs = ({}: Props) => {
+const Blogs = (props: Props) => {
   return (
     <div>
+      <Helmet>
+        <title>Blog</title>
+      </Helmet>
       <Text>Blogs</Text>
     </div>
   );

@@ -1,69 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  html {
-    font-family: "Space Grotesk", sans-serif;
-  }
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-html {
-  transition-duration: 0.5s;
-  @apply bg-white;
+.page-enter {
+    opacity: 0;
+    transform: translateY(100%);
 }
 
-html.dark {
-  @apply bg-card transition-all;
+.page-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1000ms, transform 1000ms;
 }
 
-.text {
-  @apply text-secondary-dark;
-  @apply dark:text-secondary;
+.page-exit {
+    opacity: 0;
+    transform: translateY(0);
 }
 
-.btn {
-  @apply text-secondary px-8 w-fit py-1 rounded-bl-none bg-primary rounded-full;
-  @apply hover:bg-primary/80;
-}
-
-.dev-border {
-  @apply border border-pink-500;
-}
-
-.nav-link {
-  @apply transition-all relative text-3xl sm:text-sm;
-  @apply text-secondary-dark hover:text-primary;
-  @apply dark:text-secondary hover:dark:text-primary;
-}
-
-.nav-link.active {
-  @apply text-primary;
-}
-
-.nav-link::after {
-  content: "";
-  height: 2px;
-  @apply bg-primary block absolute right-0 left-0 bottom-0 transition-transform  ease-in duration-300;
-
-  transform: scaleX(0);
-  transform-origin: bottom right;
-}
-
-.nav-link:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.nav-modal-enter {
-  @apply backdrop-blur-0 opacity-0;
-}
-.nav-modal-enter-active {
-  @apply backdrop-blur-md opacity-100 transition-all bg-card/70  duration-1000;
-}
-.nav-modal-exit {
-  @apply backdrop-blur-md  opacity-100 bg-card/70;
-}
-.nav-modal-exit-active {
-  @apply transition-all  opacity-0  backdrop-blur-0 duration-300;
+.page-exit-active {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 1000ms, transform 1000ms;
 }

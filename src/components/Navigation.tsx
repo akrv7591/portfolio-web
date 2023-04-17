@@ -1,40 +1,46 @@
 import { useState } from "react";
-import { IoMenuOutline } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import { navigationList } from "../constants/navigation";
-import IconButton from "./IconButton";
-import NavigationModal from "./modals/NavigationModal";
-import ThemeSelect from "./ThemeSelect";
+import { Text, createStyles } from "@mantine/core";
+import { useTheme } from "../providers/ThemeProvider";
+
+const styles = createStyles((theme) => ({
+  navActive: {
+    position: "relative",
+    borderBottom: "1px solid transparent",
+    "&:hover": {
+      borderColor: theme.colors.brand[0],
+    },
+    "&::before": {
+      content: '""',
+      position: "absolute",
+      bottom: 0,
+      height: "1px",
+      width: "0px",
+      transition: ".5s",
+    },
+  },
+}));
 
 const Navigation = () => {
-  const [open, setOpen] = useState(false);
+  const { classes } = styles();
   return (
-    <div className="z-20">
-      {open && <NavigationModal open={open} onClose={() => setOpen(false)} />}
-      <div className="hidden sm:flex  items-center space-x-10 justify-end">
-        {navigationList.map((navigation) => (
+      <>
+      {navigationList.map((navigation) => (
           <NavLink
-            key={navigation.id}
-            to={navigation.to}
-            className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+              key={navigation.id}
+              to={navigation.to}
+              style={({ isActive }) => ({
+                color: isActive ? "#39cdb7" : "inherit",
+                fontWeight: "bold",
+              })}
+              className={classes.navActive}
           >
-            {navigation.label}
+            <Text>{navigation.label}</Text>
           </NavLink>
-        ))}
-        <ThemeSelect />
-      </div>
-      <div className="flex sm:hidden w-full justify-end">
-        {!open && (
-          <>
-            <ThemeSelect />
-            <IconButton onClick={() => setOpen(!open)}>
-              <IoMenuOutline className="text text-2xl animate__animated animate__rotateIn" />
-            </IconButton>
-          </>
-        )}
-      </div>
-    </div>
-  );
+      )) }</>
+
+  )
 };
 
 export default Navigation;
