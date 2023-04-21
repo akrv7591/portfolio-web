@@ -19,7 +19,7 @@ export default function Profile() {
           <Image radius={"md"} variant={"circle"} src={ProfileImage} alt="profile-image" withPlaceholder/>
         </Flex>
         <Flex>
-          <Text>Currently located in Busan</Text>
+          <Text>Busan based web developer</Text>
         </Flex>
         <Flex justify={"center"} columnGap={"10px"}>
           {user.socials.map(social =>

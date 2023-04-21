@@ -1,5 +1,5 @@
 import React from "react";
-import {Container, Stack} from "@mantine/core";
+import { Stack} from "@mantine/core";
 import Header from "./Header";
 
 type Props = {

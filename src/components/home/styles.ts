@@ -35,3 +35,20 @@ export const useIntroduceStyles = createStyles(theme => ({
     fontSize: "14px"
   }
 }))
+
+export const useSidebarStyles = createStyles(theme => ({
+  root: {
+    position: "sticky",
+    top: "120px"
+  },
+  links: {
+    border: ".1px solid grey",
+    width: "fit-content",
+    borderRadius: "40px",
+    padding: "20px 10px",
+    minWidth: "50px",
+    alignItems: "center"
+  },
+  link: {
+  }
+}))

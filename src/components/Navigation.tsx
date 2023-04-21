@@ -1,8 +1,9 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { navigationList } from "../constants/navigation";
-import { Text, createStyles } from "@mantine/core";
-import { useTheme } from "../providers/ThemeProvider";
+import React from "react";
+import {NavLink} from "react-router-dom";
+import {navigationList} from "../constants/navigation";
+import {createStyles, Switch, Text} from "@mantine/core";
+import {useTheme} from "../providers/ThemeProvider";
+import {IconMoonStars, IconSun} from "@tabler/icons-react";
 
 const styles = createStyles((theme) => ({
   navActive: {
@@ -23,22 +24,33 @@ const styles = createStyles((theme) => ({
 }));
 
 const Navigation = () => {
-  const { classes } = styles();
+  const {classes} = styles();
+  const theme = useTheme()
+
   return (
-      <>
+    <>
       {navigationList.map((navigation) => (
-          <NavLink
-              key={navigation.id}
-              to={navigation.to}
-              style={({ isActive }) => ({
-                color: isActive ? "#39cdb7" : "inherit",
-                fontWeight: "bold",
-              })}
-              className={classes.navActive}
-          >
-            <Text>{navigation.label}</Text>
-          </NavLink>
-      )) }</>
+        <NavLink
+          key={navigation.id}
+          to={navigation.to}
+          style={({isActive}) => ({
+            color: isActive ? "#39cdb7" : "inherit",
+            fontWeight: "bold",
+          })}
+          className={classes.navActive}
+        >
+          <Text>{navigation.label}</Text>
+        </NavLink>
+      ))}
+      <Switch
+        checked={theme.theme === "dark"}
+        onChange={theme.toggle}
+        color="brand"
+        size="lg"
+        onLabel={<IconSun size="1.25rem" stroke={1.5} cursor={"pointer"}/>}
+        offLabel={<IconMoonStars size="1.25rem" stroke={1.5} cursor={"pointer"}/>}
+      />
+    </>
 
   )
 };

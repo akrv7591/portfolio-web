@@ -1,4 +1,4 @@
-import {BrowserRouter, Outlet, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import PublicRouter from "./PublicRouter";
 import ProtectedRouter from "./ProtectedRouter";
 import NotFound from "../views/common/NotFound";
@@ -8,7 +8,7 @@ const RootRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={"/*"} element={<PublicRouter />}/>
+        <Route path={"/*"} element={<PublicRouter/>}/>
         <Route path="admin/*" element={<ProtectedRouter/>}/>
         <Route path="*" element={<NotFound/>}/>
       </Routes>
