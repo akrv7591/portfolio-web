@@ -1,4 +1,4 @@
-import {ActionIcon, Stack, Tooltip} from "@mantine/core";
+import {ActionIcon, Grid, Stack, Tooltip} from "@mantine/core";
 import Menu from "../Menu";
 import {useSidebarStyles} from "./styles";
 import {content} from "../../constants/home";
@@ -10,17 +10,20 @@ export default function Sidebar() {
     element?.scrollIntoView()
   }
   return (
-    <Stack className={classes.root}>
-      <Menu/>
-      <Stack className={classes.links} >
-        {content.map(c => (
-          <Tooltip label={c.label} position={"left"} withArrow color={"brand"}>
-            <ActionIcon data-to-scrollspy-id={c.id} key={c.id.toString()} className={classes.link} onClick={() => onContentClick(c.id.toString())}>
-              <c.icon/>
-            </ActionIcon>
-          </Tooltip>)
-        )}
+    <Grid.Col sm={12} md={1} pos={"sticky"} top={0}>
+      <Stack mt={"60px"}>
+        <Menu/>
+        <Stack className={classes.links}>
+          {content.map(c => (
+            <Tooltip key={c.id.toString()}  label={c.label} position={"left"} withArrow color={"brand"}>
+              <ActionIcon data-to-scrollspy-id={c.id} className={classes.link}
+                          onClick={() => onContentClick(c.id.toString())}>
+                <c.icon/>
+              </ActionIcon>
+            </Tooltip>)
+          )}
+        </Stack>
       </Stack>
-    </Stack>
+    </Grid.Col>
   )
 }

@@ -2,11 +2,15 @@ import {createStyles} from "@mantine/core";
 
 export const useProfileStyles = createStyles((theme) => ({
   root: {
+    overflow: "visible",
     borderRadius: "20px",
-    width: "350px",
     padding: "30px",
-    position: "sticky",
-    top: "60px"
+    backgroundColor: theme.colorScheme === "dark"? theme.colors.dark[8]: theme.white
+  },
+  image: {
+    borderRadius: "20px",
+    marginTop: "-80px",
+    overflow: "hidden",
   },
   socialIcon: {
     border: "1px solid gray",
@@ -37,10 +41,6 @@ export const useIntroduceStyles = createStyles(theme => ({
 }))
 
 export const useSidebarStyles = createStyles(theme => ({
-  root: {
-    position: "sticky",
-    top: "60px"
-  },
   links: {
     border: ".1px solid grey",
     width: "fit-content",
@@ -51,50 +51,3 @@ export const useSidebarStyles = createStyles(theme => ({
   },
   link: {}
 }))
-
-// export const useHomeStyles = createStyles(({}) => ({
-//   body: {
-//     height: "100%",
-//     width: "100%",
-//     overflowY: "scroll",
-//   },
-//
-//   full__page: {
-//     width: "100vw",
-//     height: "100vh",
-//   },
-//   barContainer: {
-//     display: "flex",
-//     flexDirection: "column",
-//     alignItems: "flex-end",
-//     zIndex: 2,
-//     justifyContent: "space-between",
-//     "& .inverted": {
-//       display: "flex",
-//       flexDirection: "column",
-//       justifyContent: "space-between",
-//       alignItems: "flexStart",
-//       zIndex: 2,
-//     }
-//   },
-//   bar: {
-//     height: "1vh",
-//     backgroundColor: "rgba(255, 255, 255, 0.4)"
-//   },
-//   animatedLayers: {
-//     width: "100%",
-//     height: "100%",
-//     position: "fixed",
-//     inset: 0,
-//     pointerEvents: "none",
-//     zIndex: 0,
-//
-//     "& > *": {
-//       pointerEvents: "none",
-//       width: "100%",
-//       height: "100%",
-//       position: "fixed",
-//       inset: 0,
-//     }
-//   }
-// }))

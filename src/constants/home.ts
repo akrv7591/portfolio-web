@@ -22,7 +22,9 @@ import {
 import Introduce from "@components/home/Introduce";
 
 export const USER_DETAIL = {
-  username: "Abubakr Khabebulloev",
+  username: "akrv7591",
+  firstname: "Abubakr",
+  lastname: "Khabebulloev",
   role: "I am a fullstack Web developer currently living in Busan. I enjoy learning new technologies",
   currentLocation: "Busan, South Korea",
   socials: [{
