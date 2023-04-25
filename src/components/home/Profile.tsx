@@ -9,7 +9,7 @@ export default function Profile() {
   const user = USER_DETAIL
   const {classes} = useProfileStyles()
   return (
-    <Card className={classes.root} withBorder shadow={"md"}>
+    <Card className={classes.root} withBorder mt={"60px"} shadow={"md"}>
       <Stack>
         <Flex justify="space-between" align="center">
           <Text fw="bold" size={"1.5rem"} lh={"2rem"}>Abubakr <br/> Khabebulloev</Text>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Stack} from "@mantine/core";
-import Header from "./Header";
+// import Header from "./Header";
 
 type Props = {
   children: React.ReactNode;
@@ -8,8 +8,9 @@ type Props = {
 
 export default function Layout(props: Props): JSX.Element {
   return (
-    <Stack mt={"60px"}>
-      <Header/>
+    <Stack>
+      {/*<Header/>*/}
+
       {props.children}
     </Stack>
   );
