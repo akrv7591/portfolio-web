@@ -1,16 +1,21 @@
 import {Route, Routes} from "react-router-dom";
-import Home from "../views/public/Home";
-import Blogs from "../views/public/Blogs";
-import Portfolio from "../views/public/Portfolio";
 import React from "react";
+import NotFound from "../views/common/NotFound";
+
+const Home = React.lazy( () => import("../views/public/Home"))
+const Blogs = React.lazy( () => import("../views/public/Blogs"))
+const Portfolio = React.lazy( () => import("../views/public/Portfolio"))
 
 const PublicRouter = () => {
   return (
+    <React.Suspense fallback={null}>
       <Routes>
         <Route index element={<Home/>}/>
         <Route path="blogs" element={<Blogs/>}/>
         <Route path="portfolio" element={<Portfolio/>}/>
+        <Route path="*" element={<NotFound/>}/>
       </Routes>
+    </React.Suspense>
   );
 };
 

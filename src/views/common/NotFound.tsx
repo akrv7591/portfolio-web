@@ -1,17 +1,19 @@
 import Lottie from "lottie-react";
 import { Link } from "react-router-dom";
 import * as NotFound404 from "../../assets/lottie/404.json";
-import { Text } from "@mantine/core";
+import {Button, Container, Stack, Text} from "@mantine/core";
 
 const NotFound = () => {
   return (
-    <div className="h-full w-full fixed flex items-center justify-center flex-col">
-      <Lottie animationData={NotFound404} height="500" />
-      <Text>Page not found</Text>
-      <Link to="/" className="btn mt-6">
-        Continue to Home page
-      </Link>
-    </div>
+    <Container>
+      <Stack justify={"center"} w={"100%"} h={"100vh"} align={"center"}>
+        <Lottie animationData={NotFound404} style={{height: 500}} />
+        <Text>Page not found</Text>
+        <Link to="/" className="btn mt-6">
+          <Button>Continue to Home page</Button>
+        </Link>
+      </Stack>
+    </Container>
   );
 };
 
