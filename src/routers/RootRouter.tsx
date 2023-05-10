@@ -1,4 +1,4 @@
-import {BrowserRouter, Outlet, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import PublicRouter from "./PublicRouter";
 import ProtectedRouter from "./ProtectedRouter";
 import NotFound from "../views/common/NotFound";

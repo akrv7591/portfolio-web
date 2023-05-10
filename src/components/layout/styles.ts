@@ -6,16 +6,14 @@ export const usePublicLayoutStyles = createStyles((theme => ({
   },
   boxRoot: {
     position: "absolute",
-    height: "500vh",
     width: "100%",
     top: 0
   },
   box: {
-    height: "90%",
-    width: "20vw",
+    height: "100%",
+    width: "100%",
     backgroundImage: theme.fn.gradient(),
-  },
-  blur: {
     backdropFilter: "blur(200px)"
-  }
+
+  },
 })))

@@ -2,9 +2,13 @@ import {Button, Flex, Group, Image, List, rem, Stack, Text, ThemeIcon, Title} fr
 import {IconCheck} from "@tabler/icons-react";
 import {useIntroduceStyles} from "./styles";
 import {useHomeStyle} from "../../styles/home";
-import {IoHomeOutline} from "react-icons/io5";
+import {IconType} from "react-icons";
 
-export default function Introduce() {
+interface Props {
+  icon: IconType
+}
+
+export default function Introduce({icon: Icon}: Props) {
   const {classes: temp} = useIntroduceStyles()
   const {classes} = useHomeStyle()
 
@@ -12,7 +16,7 @@ export default function Introduce() {
     <Stack px={{}} mt={60}>
       <Flex>
         <Flex className={temp.badge} columnGap={"5px"}>
-          <IoHomeOutline size={"20px"}/> <Text>INTRODUCE</Text>
+          <Icon size={"20px"}/> <Text>INTRODUCE</Text>
         </Flex>
       </Flex>
       <div className={classes.inner}>

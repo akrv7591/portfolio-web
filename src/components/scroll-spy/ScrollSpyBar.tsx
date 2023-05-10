@@ -1,7 +1,6 @@
 import * as React from 'react'
 import {animated, useScroll} from '@react-spring/web'
 import {useScrollSpyBarStyles} from "@components/scroll-spy/styles";
-import {Box} from "@mantine/core";
 
 const X_LINES = 50
 const INITIAL_HEIGHT = 10
@@ -9,7 +8,6 @@ const INITIAL_HEIGHT = 10
 interface Props {
   children?: React.ReactNode
 }
-
 
 export default function ScrollSpyBar(props: Props) {
   const barContainerRef = React.useRef<HTMLDivElement>(null!)

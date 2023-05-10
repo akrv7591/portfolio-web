@@ -8,8 +8,10 @@ export default function PublicLayout() {
   const {classes} = usePublicLayoutStyles()
   return (
     <Container fluid className={classes.root}>
-      <Center className={classes.boxRoot}><Box className={classes.box}/></Center>
-      <Container fluid className={classes.blur}>
+      <Center className={classes.boxRoot}>
+        <Box className={classes.box}/>
+      </Center>
+      <Container fluid>
         <Outlet/>
       </Container>
       <ScrollSpyBar/>

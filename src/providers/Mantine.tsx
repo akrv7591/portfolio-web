@@ -19,7 +19,7 @@ export default function Mantine(props: Props) {
           brand: ['#d7f5f1', '#c4f0e9', '#b0ebe2', '#9ce6db', '#88e1d4', '#74dccd', '#61d7c5', '#4dd2be', '#39cdb7'],
         },
         defaultGradient: theme.theme === "dark"?
-          { from: '#4b1f8d', to: '#3ddbea', deg: 20 }:
+          { from: '#12100E', to: '#2B4162', deg: 180 }:
           { from: '#ffffff', to: '#ffffff', deg: 10 },
         colorScheme: theme.theme,
         primaryColor: "brand",
