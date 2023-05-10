@@ -1,8 +1,7 @@
 import {Box, Center, Container} from "@mantine/core";
 import {Outlet} from "react-router-dom";
-import {usePublicLayoutStyles} from "@components/layout/styles";
-import ScrollSpyBar from "@components/scroll-spy/ScrollSpyBar";
-import React from "react";
+import {usePublicLayoutStyles} from "@/components/layout/styles";
+import ScrollSpyBar from "@/components/scroll-spy/ScrollSpyBar";
 
 export default function PublicLayout() {
   const {classes} = usePublicLayoutStyles()

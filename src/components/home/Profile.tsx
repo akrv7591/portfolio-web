@@ -1,9 +1,9 @@
 import {ActionIcon, Button, Card, Code, Flex, Grid, Image, Stack, Text, Tooltip} from "@mantine/core";
-import {useProfileStyles} from "./styles";
-import ProfileImage from '../../assets/images/profile-img.jpg'
+import {useProfileStyles} from "@/components/home/styles";
+import ProfileImage from '@/assets/images/profile-img.jpg'
 import {IconMessage} from "@tabler/icons-react";
 import {Link} from "react-router-dom";
-import {USER_DETAIL} from "../../constants/home";
+import {USER_DETAIL} from "@/constants/home";
 
 export default function Profile() {
   const user = USER_DETAIL

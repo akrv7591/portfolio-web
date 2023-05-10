@@ -19,7 +19,7 @@ import {
   IoStarOutline,
   IoTerminalOutline
 } from "react-icons/io5";
-import Introduce from "@components/home/Introduce";
+import Introduce from "@/components/home/Introduce";
 
 export const USER_DETAIL = {
   username: "akrv7591",
@@ -94,7 +94,7 @@ export const stacks = [{
 export const content = [
   {
     id: 0,
-    label: "Introduce",
+    label: "Introduction",
     icon: IoHomeOutline,
     component: Introduce
   }, {

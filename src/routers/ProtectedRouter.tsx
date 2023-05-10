@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "../views/public/Home";
-import NotFound from "../views/common/NotFound";
+import Home from "@/views/public/Home";
+import NotFound from "@/views/common/NotFound";
 
 const ProtectedRouter = () => {
   return (

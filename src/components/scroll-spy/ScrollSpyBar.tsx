@@ -1,15 +1,11 @@
 import * as React from 'react'
 import {animated, useScroll} from '@react-spring/web'
-import {useScrollSpyBarStyles} from "@components/scroll-spy/styles";
+import {useScrollSpyBarStyles} from "@/components/scroll-spy/styles";
 
 const X_LINES = 50
 const INITIAL_HEIGHT = 10
 
-interface Props {
-  children?: React.ReactNode
-}
-
-export default function ScrollSpyBar(props: Props) {
+export default function ScrollSpyBar( ) {
   const barContainerRef = React.useRef<HTMLDivElement>(null!)
   const {scrollYProgress} = useScroll()
   const {classes} = useScrollSpyBarStyles()

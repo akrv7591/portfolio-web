@@ -1,9 +1,9 @@
 import React from "react";
-import portfolioApi from "../api/poortfolio";
-import { WITH_BACKEND } from "../constants/backend";
+import portfolioApi from "@/api/poortfolio";
+import { WITH_BACKEND } from "@/constants/backend";
 import jwt from "jsonwebtoken";
-import { JWT_KEY } from "../configs/jwt";
-import { AUTH_USER } from "../constants/auth";
+import { JWT_KEY } from "@/configs/jwt";
+import { AUTH_USER } from "@/constants/auth";
 
 export type UserProps = {
   id: number;

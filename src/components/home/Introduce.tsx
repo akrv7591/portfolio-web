@@ -1,14 +1,15 @@
 import {Button, Flex, Group, Image, List, rem, Stack, Text, ThemeIcon, Title} from "@mantine/core";
 import {IconCheck} from "@tabler/icons-react";
-import {useIntroduceStyles} from "./styles";
-import {useHomeStyle} from "../../styles/home";
+import {useIntroduceStyles} from "@/components/home/styles";
+import {useHomeStyle} from "@/styles/home";
 import {IconType} from "react-icons";
 
 interface Props {
+  title: string
   icon: IconType
 }
 
-export default function Introduce({icon: Icon}: Props) {
+export default function Introduce({icon: Icon, title}: Props) {
   const {classes: temp} = useIntroduceStyles()
   const {classes} = useHomeStyle()
 
@@ -16,7 +17,7 @@ export default function Introduce({icon: Icon}: Props) {
     <Stack px={{}} mt={60}>
       <Flex>
         <Flex className={temp.badge} columnGap={"5px"}>
-          <Icon size={"20px"}/> <Text>INTRODUCE</Text>
+          <Icon size={"20px"}/> <Text>{title}</Text>
         </Flex>
       </Flex>
       <div className={classes.inner}>

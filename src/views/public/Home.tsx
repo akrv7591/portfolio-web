@@ -1,8 +1,7 @@
 import {Container, Grid} from "@mantine/core";
-import Profile from "../../components/home/Profile";
-import Sidebar from "@components/home/Sidebar";
-import React from "react";
-import Content from "@components/home/Content";
+import Sidebar from "@/components/home/Sidebar";
+import Content from "@/components/home/Content";
+import Profile from "@/components/home/Profile.tsx";
 
 const Home = () => {
 

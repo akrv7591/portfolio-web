@@ -1,10 +1,10 @@
 import {Route, Routes} from "react-router-dom";
 import React from "react";
-import NotFound from "../views/common/NotFound";
+import NotFound from "@/views/common/NotFound";
 
-const Home = React.lazy( () => import("../views/public/Home"))
-const Blogs = React.lazy( () => import("../views/public/Blogs"))
-const Portfolio = React.lazy( () => import("../views/public/Portfolio"))
+const Home = React.lazy( () => import("@/views/public/Home"))
+const Blogs = React.lazy( () => import("@/views/public/Blogs"))
+const Portfolio = React.lazy( () => import("@/views/public/Portfolio"))
 
 const PublicRouter = () => {
   return (

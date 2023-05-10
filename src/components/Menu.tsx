@@ -1,7 +1,7 @@
 import {ActionIcon, Box, createStyles, Drawer, Stack} from "@mantine/core";
 import {IconMenu} from "@tabler/icons-react";
 import {useDisclosure} from "@mantine/hooks";
-import Navigation from "./Navigation";
+import Navigation from "@/components/Navigation";
 export default function Menu() {
   const {classes} = useStyles()
   const [opened, {open, close}] = useDisclosure()
@@ -22,7 +22,7 @@ export default function Menu() {
   )
 }
 
-const useStyles = createStyles(theme => ({
+const useStyles = createStyles(() => ({
   menuIcon: {
     borderRadius: "50%",
     border: "0.1px solid grey"

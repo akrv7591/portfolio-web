@@ -1,8 +1,7 @@
-import React from "react";
 import {NavLink} from "react-router-dom";
-import {navigationList} from "../constants/navigation";
+import {navigationList} from "@/constants/navigation";
 import {createStyles, Switch, Text} from "@mantine/core";
-import {useTheme} from "../providers/ThemeProvider";
+import {useTheme} from "@/providers/ThemeProvider";
 import {IconMoonStars, IconSun} from "@tabler/icons-react";
 
 const styles = createStyles((theme) => ({

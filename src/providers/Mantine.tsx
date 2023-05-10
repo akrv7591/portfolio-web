@@ -1,5 +1,5 @@
 import { MantineProvider } from "@mantine/core";
-import { useTheme } from "./ThemeProvider";
+import { useTheme } from "@/providers/ThemeProvider";
 import React from "react";
 
 interface Props {

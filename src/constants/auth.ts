@@ -1,4 +1,4 @@
-import { UserProps } from "../providers/AuthProvider";
+import { UserProps } from "@/providers/AuthProvider";
 
 export const AUTH_USER: UserProps = {
   id: 1,

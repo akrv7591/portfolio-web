@@ -1,7 +1,7 @@
 import {ActionIcon, Grid, Stack, Tooltip} from "@mantine/core";
-import Menu from "../Menu";
-import {useSidebarStyles} from "./styles";
-import {content} from "../../constants/home";
+import {useSidebarStyles} from "@/components/home/styles";
+import {content} from "@/constants/home";
+import Menu from "@/components/Menu.tsx";
 
 export default function Sidebar() {
   const {classes} = useSidebarStyles()
