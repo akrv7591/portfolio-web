@@ -26,6 +26,7 @@
     "apisauce": "^2.1.5",
     "dayjs": "^1.11.7",
     "embla-carousel-react": "^7.1.0",
+    "framer-motion": "^10.12.10",
     "jsonwebtoken": "^9.0.0",
     "lottie-react": "^2.3.1",
     "path": "^0.12.7",

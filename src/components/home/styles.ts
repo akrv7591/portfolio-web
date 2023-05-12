@@ -11,6 +11,7 @@ export const useProfileStyles = createStyles((theme) => ({
     borderRadius: "20px",
     marginTop: "-80px",
     overflow: "hidden",
+    width: "100%"
   },
   socialIcon: {
     border: "1px solid gray",
@@ -40,7 +41,7 @@ export const useIntroduceStyles = createStyles(theme => ({
   }
 }))
 
-export const useSidebarStyles = createStyles(theme => ({
+export const useSidebarStyles = createStyles(() => ({
   links: {
     border: ".1px solid grey",
     width: "fit-content",

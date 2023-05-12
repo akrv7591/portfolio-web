@@ -1,4 +1,4 @@
-import {Button, Flex, Group, Image, List, rem, Stack, Text, ThemeIcon, Title} from "@mantine/core";
+import {Code, Flex, Image, List, rem, Stack, Text, ThemeIcon, Title} from "@mantine/core";
 import {IconCheck} from "@tabler/icons-react";
 import {useIntroduceStyles} from "@/components/home/styles";
 import {useHomeStyle} from "@/styles/home";
@@ -23,12 +23,10 @@ export default function Introduce({icon: Icon, title}: Props) {
       <div className={classes.inner}>
         <div className={classes.content}>
           <Title className={classes.title}>
-            A <span className={classes.highlight}>modern</span> React <br/> components library
+            Hi. I am <span className={classes.highlight}>Full stack web</span> <br/> developer
           </Title>
-          <Text color="dimmed" mt="md">
-            Build fully functional accessible web applications faster than ever – Mantine includes
-            more than 120 customizable components and hooks to cover you in any situation
-          </Text>
+            <Text color="dimmed" mt="md">Busan based versatile Full Stack Web Developer, 3+ years experience, skilled
+              in <br /> <Code>React</Code>, <Code>Node.js</Code>, <Code>Python</Code>, and <Code>Typescript</Code>.</Text>
 
           <List
             mt={30}
@@ -41,27 +39,15 @@ export default function Introduce({icon: Icon, title}: Props) {
             }
           >
             <List.Item>
-              <b>TypeScript based</b> – build type safe applications, all components and hooks
-              export types
+              <b>Frontend</b> – Experienced and proficient React and TypeScript developer adept at building robust and scalable web applications.
             </List.Item>
             <List.Item>
-              <b>Free and open source</b> – all packages have MIT license, you can use Mantine in
-              any project
+              <b>Backend</b> – Highly proficient developer skilled in both Node.js and Django, with a strong track record of delivering scalable and secure web applications.
             </List.Item>
             <List.Item>
-              <b>No annoying focus ring</b> – focus ring will appear only when user navigates with
-              keyboard
+              <b>Database</b> – Experienced and proficient developer with 3 years of MySQL development expertise, delivering robust and efficient database solutions.
             </List.Item>
           </List>
-
-          <Group mt={30}>
-            <Button radius="xl" size="md" className={classes.control}>
-              Get started
-            </Button>
-            <Button variant="default" radius="xl" size="md" className={classes.control}>
-              Source code
-            </Button>
-          </Group>
         </div>
         <Image src={""} className={classes.image}/>
       </div>

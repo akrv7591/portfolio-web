@@ -9,13 +9,7 @@ export const useHomeStyle = createStyles((theme) => ({
   },
 
   content: {
-    maxWidth: rem(480),
-    marginRight: `calc(${theme.spacing.xl} * 3)`,
-
-    [theme.fn.smallerThan('md')]: {
-      maxWidth: '100%',
-      marginRight: 0,
-    },
+    width: "100%"
   },
 
   title: {
