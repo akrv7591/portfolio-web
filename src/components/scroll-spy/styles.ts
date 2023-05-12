@@ -1,6 +1,6 @@
 import {createStyles} from "@mantine/core";
 
-export const useScrollSpyBarStyles = createStyles(theme => ({
+export const useScrollSpyBarStyles = createStyles(() => ({
   leftBar: {
     display: "flex",
     flexDirection: "column-reverse",

@@ -1,9 +1,8 @@
 import { Helmet } from "react-helmet";
 import { Text } from "@mantine/core";
 
-type Props = {};
 
-const Portfolio = (props: Props) => {
+const Portfolio = () => {
   return (
     <div>
       <Helmet>
