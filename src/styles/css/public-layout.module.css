@@ -1,0 +1,13 @@
+.root {
+    padding: 0
+}
+.boxRoot {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.box {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(200px);
+}

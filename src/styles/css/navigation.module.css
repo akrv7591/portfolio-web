@@ -1,0 +1,17 @@
+.navActive {
+    position: relative;
+    border-bottom: 1px solid transparent;
+}
+
+.navActive:hover {
+    border-color: var(--mantine-primary-color-light)
+}
+
+.navActive::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 0;
+    transition: .5s;
+}

@@ -1,0 +1,20 @@
+.leftBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+.rightBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transform: rotate(180deg);
+    position: fixed;
+    height: 100vh;
+    right: 0;
+    top: 0;
+}

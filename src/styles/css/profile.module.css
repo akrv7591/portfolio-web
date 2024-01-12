@@ -1,0 +1,40 @@
+.root {
+    position: sticky;
+    width: 350px;
+    top: 100px;
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        position: relative;
+        top: unset;
+        margin-top: 30px;
+    }
+}
+
+.image {
+    border-radius: 20px;
+    width: 94%;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: -40px;
+}
+
+.socialIcon {
+    border: 1px solid gray;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.socialIcon:hover {
+    background-color: var(--mantine-primary-color-filled);
+    color: #fff;
+}
+
+.socialIcon button {
+    background-color: transparent;
+}
+
+.messageBtn {
+    border-radius: 20px;
+    height: 3rem
+}
