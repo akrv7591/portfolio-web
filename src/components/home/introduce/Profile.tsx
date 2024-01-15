@@ -4,16 +4,13 @@ import {IconMessage} from "@tabler/icons-react";
 import {Link} from "react-router-dom";
 import {USER_DETAIL as user} from "@constants/home.ts";
 import styles from "@styles/css/profile.module.css"
-import {Zoom} from "react-awesome-reveal";
 
 export default function Profile() {
   return (
-    <Box className={styles.root}>
+    <Box className={`${styles.root} animate__animated animate__backInLeft`}>
       <Card withBorder shadow={"xl"} style={{overflow: "visible"}} bg={"var(--mantine-color-dark-6)"}>
-        <Card.Section>
-          <Zoom direction={"up"}>
-            <Image className={styles.image} src={ProfileImage} alt="profile-image"/>
-          </Zoom>
+        <Card.Section className={""}>
+          <Image className={`${styles.image} animate__animated animate__zoomInUp animate__delay-1s`} src={ProfileImage} alt="profile-image"/>
         </Card.Section>
         <Stack>
           <Text mt={"md"} ta={"center"} fw="bold" size={"2rem"} lh={"2rem"} variant="gradient"

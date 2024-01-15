@@ -5,6 +5,7 @@ import {theme} from "@configs/theme.ts";
 import RootRouter from "@routers/RootRouter.tsx";
 import '@mantine/core/styles.css';
 import "./App.css"
+import 'animate.css';
 
 
 export default function App() {
