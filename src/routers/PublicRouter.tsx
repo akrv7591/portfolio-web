@@ -1,8 +1,7 @@
 import React from "react";
 import {Route, Routes} from "react-router-dom";
 import NotFound from "@views/common/NotFound.tsx";
-
-const Home = React.lazy( () => import("@views/public/Home"))
+import Home from "@views/public/Home.tsx";
 
 const PublicRouter = () => {
   return (
