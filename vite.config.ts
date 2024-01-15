@@ -9,7 +9,6 @@ export default defineConfig({
     react(),
     svgr({
       svgrOptions: {
-        // svgr options
       },
     })
   ],
@@ -30,5 +29,9 @@ export default defineConfig({
   },
   server: {
     port: 3000
+  },
+  build: {
+    minify: "esbuild"
   }
+
 })

@@ -11,7 +11,6 @@ import Introduce from "@components/home/introduce/Introduce.tsx";
 import Skills from "@components/home/skills/Skills.tsx";
 import {svgIcons} from "@constants/svg-icons.ts";
 
-
 export const USER_DETAIL = {
   username: "akrv7591",
   firstname: "Abubakr",
