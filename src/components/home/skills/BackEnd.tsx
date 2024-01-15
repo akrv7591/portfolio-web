@@ -4,7 +4,7 @@ import {IconBolt} from "@tabler/icons-react";
 
 export default function BackEnd() {
   return (
-    <Grid.Col span={{xs: 12, lg: 6}}>
+    <Grid.Col span={{xs: 12, lg: 12}}>
       <Title c={"var(--mantine-primary-color-4)"} order={2}>Back-end</Title>
       <Stack mt={"md"}>
         <Timeline lineWidth={"1px"} bulletSize={"25px"}>

@@ -6,14 +6,7 @@ import {
   IconBrandMysql,
   IconBrandTwitter
 } from "@tabler/icons-react";
-import {
-  IoBriefcaseOutline,
-  IoFileTrayFullOutline,
-  IoHomeOutline,
-  IoShapesOutline,
-  IoStarOutline,
-  IoTerminalOutline
-} from "react-icons/io5";
+import {IoHomeOutline, IoShapesOutline} from "react-icons/io5";
 import Introduce from "@components/home/introduce/Introduce.tsx";
 import Skills from "@components/home/skills/Skills.tsx";
 import {svgIcons} from "@constants/svg-icons.ts";
