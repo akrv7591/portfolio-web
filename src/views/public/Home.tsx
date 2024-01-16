@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <Container size={"xl"}>
       <div className={styles.gridContainer}>
-        <Profile/>
+        {/*<Profile/>*/}
         <Content/>
         <Sidebar/>
       </div>

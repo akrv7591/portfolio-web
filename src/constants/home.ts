@@ -319,15 +319,36 @@ export const skills = [{
 }]
 
 export const jobs = [{
+  label: "ZEROWEB ((주)제로웹)-test",
+  location: "Korea, Busan",
+  startDate: "2020-08-13",
+  endDate: "2024-01-13",
+  role: "Full-stack web developer",
+  logo: svgIcons.Zeroweb,
+  link: "https://zeroweb.kr/"
+}, {
   label: "ZEROWEB ((주)제로웹)",
   location: "Korea, Busan",
   startDate: "2020-08-13",
   endDate: "Present",
   role: "Full-stack web developer",
-  logo: svgIcons.Zeroweb
-} ]
+  logo: svgIcons.Zeroweb,
+  link: "https://zeroweb.kr/"
+}]
 
 export const careers = [{
   label: "Full-time",
   items: jobs
+}]
+
+export const professionalProjects = [{
+  label: "",
+}]
+
+export const projects = [{
+  label: "Professional",
+  items: professionalProjects
+}, {
+  label: "Persoanal",
+  items: professionalProjects
 }]
