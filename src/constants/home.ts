@@ -6,10 +6,11 @@ import {
   IconBrandMysql,
   IconBrandTwitter
 } from "@tabler/icons-react";
-import {IoHomeOutline, IoShapesOutline} from "react-icons/io5";
+import {IoBriefcaseOutline, IoHomeOutline, IoShapesOutline} from "react-icons/io5";
 import Introduce from "@components/home/introduce/Introduce.tsx";
 import Skills from "@components/home/skills/Skills.tsx";
 import {svgIcons} from "@constants/svg-icons.ts";
+import Careers from "@components/home/career/Careers.tsx";
 
 export const USER_DETAIL = {
   username: "akrv7591",
@@ -61,11 +62,17 @@ export const content = [
     component: Introduce
   },
   {
-    id: 4,
+    id: 1,
     label: "Professional Skills",
     icon: IoShapesOutline,
     component: Skills
   },
+  {
+    id: 2,
+    label: "Career",
+    icon: IoBriefcaseOutline,
+    component: Careers
+  }
   //  {
   //   id: 2,
   //   label: "Jobs",
@@ -311,4 +318,16 @@ export const skills = [{
   items: backend
 }]
 
+export const jobs = [{
+  label: "ZEROWEB ((주)제로웹)",
+  location: "Korea, Busan",
+  startDate: "2020-08-13",
+  endDate: "Present",
+  role: "Full-stack web developer",
+  logo: svgIcons.Zeroweb
+} ]
 
+export const careers = [{
+  label: "Full-time",
+  items: jobs
+}]

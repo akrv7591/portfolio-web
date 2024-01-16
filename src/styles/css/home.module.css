@@ -3,6 +3,7 @@
     display: flex;
     column-gap: 50px;
     align-items: flex-start;
+    padding-bottom: 500px;
 
     @mixin smaller-than $mantine-breakpoint-sm {
         display: flex;

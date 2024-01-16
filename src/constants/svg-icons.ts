@@ -21,6 +21,7 @@ import Express from "@assets/brand-logos/express.svg?react"
 import Nest from "@assets/brand-logos/nestjs.svg?react"
 import Django from "@assets/brand-logos/django-icon.svg?react"
 import Flask from "@assets/brand-logos/flask.svg?react"
+import Zeroweb from "@assets/brand-logos/zeroweb_logo.svg"
 
 
 export const svgIcons = {
@@ -57,4 +58,7 @@ export const svgIcons = {
   Nest,
   Django,
   Flask,
+
+  // Career company logos,
+  Zeroweb
 }
