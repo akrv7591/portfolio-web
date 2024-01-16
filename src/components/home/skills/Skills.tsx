@@ -1,14 +1,11 @@
-import {Grid, Stack} from "@mantine/core";
-import FrontEnd from "@components/home/skills/FrontEnd.tsx";
-import BackEnd from "@components/home/skills/BackEnd.tsx";
+import {Stack} from "@mantine/core";
+import {skills} from "@constants/home.ts";
+import Skill from "@components/home/skills/Skill.tsx";
 
 export default function Skills() {
   return (
-    <Stack>
-      <Grid>
-        <FrontEnd/>
-        <BackEnd/>
-      </Grid>
+    <Stack gap={"xl"}>
+      {skills.map(skill => <Skill key={skill.label} skill={skill}/>)}
     </Stack>
   )
 }

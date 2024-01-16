@@ -1,16 +1,19 @@
-import {ActionIcon, Box, Button, Card, Code, Group, Image, Stack, Text, Tooltip} from "@mantine/core";
+import {ActionIcon, Button, Card, Code, Group, Image, Stack, Text, Tooltip} from "@mantine/core";
 import ProfileImage from '@assets/images/profile-img.jpg'
 import {IconMessage} from "@tabler/icons-react";
 import {Link} from "react-router-dom";
 import {USER_DETAIL as user} from "@constants/home.ts";
 import styles from "@styles/css/profile.module.css"
+import Reveal from "@components/Reveal.tsx";
 
 export default function Profile() {
   return (
-    <Box className={`${styles.root} animate__animated animate__backInLeft`}>
-      <Card withBorder shadow={"xl"} style={{overflow: "visible"}} bg={"var(--mantine-color-dark-6)"}>
+    <Reveal type={"fadeUp"} className={styles.root}>
+      <Card mih={{md: "500px", xs: "100vh"}} withBorder shadow={"xl"} style={{overflow: "visible"}} bg={"var(--mantine-color-dark-6)"}>
         <Card.Section className={""}>
-          <Image className={`${styles.image} animate__animated animate__zoomInUp animate__delay-1s`} src={ProfileImage} alt="profile-image"/>
+          <Reveal delay={1} type={"zoomInDown"}>
+            <Image className={`${styles.image}`} src={ProfileImage} alt="profile-image"/>
+          </Reveal>
         </Card.Section>
         <Stack>
           <Text mt={"md"} ta={"center"} fw="bold" size={"2rem"} lh={"2rem"} variant="gradient"
@@ -34,6 +37,6 @@ export default function Profile() {
           </Button>
         </Stack>
       </Card>
-    </Box>
+    </Reveal>
   )
 }

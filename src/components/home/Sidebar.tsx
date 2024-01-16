@@ -9,7 +9,7 @@ export default function Sidebar() {
     element?.scrollIntoView()
   }
   return (
-    <Box pos={"sticky"} top={60}>
+    <Box pos={"sticky"} top={60} style={{flexGrow: "revert"}}>
       <Stack>
         <Menu/>
         <Stack className={styles.links}>

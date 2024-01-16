@@ -251,9 +251,6 @@ const backendAwsServices = [{
 }, {
   label: "Route53",
   icon: null
-}, {
-  label: "S3",
-  icon: null
 }]
 
 const backendGoogleCloudServices = [{
@@ -306,9 +303,12 @@ const backend = [{
 }]
 
 
-export const skills = {
-  frontend,
-  backend,
-}
+export const skills = [{
+  label: "Front-end",
+  items: frontend,
+}, {
+  label: "Back-end",
+  items: backend
+}]
 
 

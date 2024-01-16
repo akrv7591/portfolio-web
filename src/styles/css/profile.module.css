@@ -1,12 +1,13 @@
 .root {
     position: sticky;
-    width: 350px;
+    width: 550px;
     top: 100px;
 
     @media (max-width: $mantine-breakpoint-sm) {
         position: relative;
         top: unset;
         margin-top: 30px;
+        width: 100%;
     }
 }
 
