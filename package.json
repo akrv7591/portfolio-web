@@ -10,12 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mantine/carousel": "^7.4.1",
     "@mantine/core": "^7.4.0",
     "@mantine/hooks": "^7.4.0",
     "@tabler/icons-react": "^2.39.0",
     "@types/jsonwebtoken": "^9.0.3",
     "apisauce": "^3.0.1",
     "dayjs": "^1.11.10",
+    "embla-carousel-react": "^7.1.0",
     "framer-motion": "^10.18.0",
     "jsonwebtoken": "^9.0.2",
     "lottie-react": "^2.4.0",

@@ -5,6 +5,28 @@
     padding: 20px 10px;
     min-width: 50px;
     align-items: center;
+    position: sticky;
+    flex-direction: column;
+
+    @media (min-width: $mantine-breakpoint-md) {
+        top: 60px;
+        row-gap: 20px;
+    }
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        position: fixed;
+        bottom: 0;
+        flex-direction: row;
+        left: 0;
+        right: 0;
+        height: 60px;
+        background-color: var(--mantine-color-dark-6);
+        width: 100%;
+        z-index: 1;
+        justify-content: space-around;
+        border-radius: 0;
+        border: none;
+    }
 }
 
 .link {

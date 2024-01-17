@@ -6,11 +6,12 @@ import {
   IconBrandMysql,
   IconBrandTwitter
 } from "@tabler/icons-react";
-import {IoBriefcaseOutline, IoHomeOutline, IoShapesOutline} from "react-icons/io5";
+import {IoBriefcaseOutline, IoFileTrayFullOutline, IoHomeOutline, IoShapesOutline} from "react-icons/io5";
 import Introduce from "@components/home/introduce/Introduce.tsx";
 import Skills from "@components/home/skills/Skills.tsx";
 import {svgIcons} from "@constants/svg-icons.ts";
 import Careers from "@components/home/career/Careers.tsx";
+import Projects from "@components/home/projects/Projects.tsx";
 
 export const USER_DETAIL = {
   username: "akrv7591",
@@ -54,49 +55,6 @@ export const USER_DETAIL = {
   },
 };
 
-export const content = [
-  {
-    id: 0,
-    label: "Introduce",
-    icon: IoHomeOutline,
-    component: Introduce
-  },
-  {
-    id: 1,
-    label: "Professional Skills",
-    icon: IoShapesOutline,
-    component: Skills
-  },
-  {
-    id: 2,
-    label: "Career",
-    icon: IoBriefcaseOutline,
-    component: Careers
-  }
-  //  {
-  //   id: 2,
-  //   label: "Jobs",
-  //   icon: IoBriefcaseOutline,
-  //   component: Introduce
-  // }, {
-  //   id: 3,
-  //   label: "Services",
-  //   icon: IoTerminalOutline,
-  //   component: Introduce
-  // },
-  // {
-  //   id: 5,
-  //   label: "Projects",
-  //   icon: IoFileTrayFullOutline,
-  //   component: Introduce
-  // },
-  // {
-  //   id: 6,
-  //   label: "Testimonials",
-  //   icon: IoStarOutline,
-  //   component: Introduce
-  // }
-]
 
 
 const frontendLanguages = [{
@@ -319,14 +277,6 @@ export const skills = [{
 }]
 
 export const jobs = [{
-  label: "ZEROWEB ((주)제로웹)-test",
-  location: "Korea, Busan",
-  startDate: "2020-08-13",
-  endDate: "2024-01-13",
-  role: "Full-stack web developer",
-  logo: svgIcons.Zeroweb,
-  link: "https://zeroweb.kr/"
-}, {
   label: "ZEROWEB ((주)제로웹)",
   location: "Korea, Busan",
   startDate: "2020-08-13",
@@ -342,13 +292,170 @@ export const careers = [{
 }]
 
 export const professionalProjects = [{
-  label: "",
+  label: "지하철 내비게이션",
+  startDate: "2022-02-01",
+  endDate: "2023-05-01",
+  role: "Full-stack web developer",
+  images: [
+    '/projects/subway-navigation/sn-0.webp',
+    '/projects/subway-navigation/sn-1.webp',
+    '/projects/subway-navigation/sn-2.webp',
+    '/projects/subway-navigation/sn-3.webp',
+    '/projects/subway-navigation/sn-4.webp',
+    '/projects/subway-navigation/sn-5.webp',
+    '/projects/subway-navigation/sn-6.webp',
+    '/projects/subway-navigation/sn-7.webp',
+    '/projects/subway-navigation/sn-8.webp',
+  ],
+  links: [{
+    label: "Google Play",
+    link: "https://play.google.com/store/apps/details?id=cloud.zeroweb.navigation.subway"
+  }],
+  skills: [{
+    label: "NodeJS",
+    icon: null
+  }, {
+    label: "Typescript",
+    icon: svgIcons.Typescript
+  }, {
+    label: "React",
+    icon: svgIcons.React
+  }, {
+    label: "MySQL",
+    icon: null
+  }]
+}, {
+  label: "심부름이 필요할때, 헬퍼잇",
+  startDate: "2022-05-01",
+  endDate: "2022-12-01",
+  role: "Backend developer",
+  images: [
+    '/projects/helperit/h-0.png',
+  ],
+  links: [{
+    label: "Helperit homepage",
+    link: "https://helperit.co.kr/"
+  }],
+  skills: [{
+    label: "NodeJS",
+    icon: null
+  }, {
+    label: "Typescript",
+    icon: svgIcons.Typescript
+  }, {
+    label: "MySQL",
+    icon: null
+  }]
+}, {
+  label: "스마트시티 통합플랫폼, TTA Certified",
+  startDate: "2022-02-01",
+  endDate: "2023-02-01",
+  role: "Backend developer",
+  images: [
+    '/projects/tta/ta-0.png',
+    '/projects/tta/ta-1.png',
+    '/projects/tta/ta-2.png',
+    '/projects/tta/ta-3.png',
+    '/projects/tta/ta-4.png',
+    '/projects/tta/ta-5.png',
+  ],
+  links: [],
+  skills: [{
+    label: "NodeJS",
+    icon: null
+  }, {
+    label: "Typescript",
+    icon: svgIcons.Typescript
+  }, {
+    label: "MySQL",
+    icon: null
+  }, {
+    label: "RTSP Camera streaming",
+    icon: null
+  }, {
+    label: "Onvif Camera controlling",
+    icon: null
+  }]
+}, {
+  label: "1등급( 소프트웨어품질인증의 최고등급)",
+  startDate: "2023-03-01",
+  endDate: "2023-10-01",
+  role: "Backend developer",
+  images: [
+    '/projects/tta/ta-0.png',
+    '/projects/tta/ta-1.png',
+    '/projects/tta/ta-2.png',
+    '/projects/tta/ta-3.png',
+    '/projects/tta/ta-4.png',
+    '/projects/tta/ta-5.png',
+  ],
+  links: [],
+  skills: [{
+    label: "NodeJS",
+    icon: null
+  }, {
+    label: "Typescript",
+    icon: svgIcons.Typescript
+  }, {
+    label: "MySQL",
+    icon: null
+  }, {
+    label: "RTSP Camera streaming",
+    icon: null
+  }, {
+    label: "Onvif Camera controlling",
+    icon: null
+  }]
+
 }]
+
 
 export const projects = [{
   label: "Professional",
   items: professionalProjects
-}, {
-  label: "Persoanal",
-  items: professionalProjects
-}]
+},
+//   {
+//   label: "Personal",
+//   items: []
+// }
+]
+
+
+export const content = [
+  {
+    id: 0,
+    label: "Introduce",
+    icon: IoHomeOutline,
+    component: Introduce
+  },
+  {
+    id: 1,
+    label: "Skills",
+    icon: IoShapesOutline,
+    component: Skills
+  },
+  {
+    id: 2,
+    label: "Career",
+    icon: IoBriefcaseOutline,
+    component: Careers
+  },
+  {
+    id: 5,
+    label: "Projects",
+    icon: IoFileTrayFullOutline,
+    component: Projects
+  },
+  // {
+  //   id: 3,
+  //   label: "Services",
+  //   icon: IoTerminalOutline,
+  //   component: Introduce
+  // },
+  // {
+  //   id: 6,
+  //   label: "Testimonials",
+  //   icon: IoStarOutline,
+  //   component: Introduce
+  // }
+]

@@ -9,7 +9,7 @@ import Reveal from "@components/Reveal.tsx";
 export default function Profile() {
   return (
     <Reveal type={"fadeUp"} className={styles.root}>
-      <Card mih={{md: "500px", xs: "100vh"}} withBorder shadow={"xl"} style={{overflow: "visible"}} bg={"var(--mantine-color-dark-6)"}>
+      <Card mih={{md: "500px", base: "calc(100vh - 150px)"}} withBorder shadow={"xl"} style={{overflow: "visible"}} bg={"var(--mantine-color-dark-6)"}>
         <Card.Section className={""}>
           <Reveal delay={1} type={"zoomInDown"}>
             <Image className={`${styles.image}`} src={ProfileImage} alt="profile-image"/>
@@ -32,7 +32,7 @@ export default function Profile() {
                 </Tooltip>
               </Link>)}
           </Group>
-          <Button leftSection={<IconMessage stroke={1}/>} className={styles.messageBtn} fullWidth>
+          <Button component={"a"}  href={"mailto:akrv7591@gmail.com"} leftSection={<IconMessage stroke={1}/>} className={styles.messageBtn} fullWidth>
             Message me
           </Button>
         </Stack>

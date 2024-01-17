@@ -8,9 +8,9 @@ import Profile from "@components/home/introduce/Profile.tsx";
 const Home = () => {
 
   return (
-    <Container size={"xl"}>
+    <Container size={"xl"} >
       <div className={styles.gridContainer}>
-        {/*<Profile/>*/}
+        <Profile/>
         <Content/>
         <Sidebar/>
       </div>

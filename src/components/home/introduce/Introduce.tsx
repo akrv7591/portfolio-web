@@ -4,7 +4,7 @@ import styles from "@styles/css/introduce.module.css"
 
 export default function Introduce() {
   return (
-    <Stack h={"calc(100vh - 100px)"}>
+    <Stack h={{md: "calc(100vh - 100px)", xs: "100vh"}}>
       <div className={styles.inner}>
         <div className={styles.content}>
           <Title className={styles.title}>

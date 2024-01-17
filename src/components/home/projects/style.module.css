@@ -1,0 +1,111 @@
+.container {
+    width: 100%;
+    @media (max-width: $mantine-breakpoint-sm) {
+        width: 80vw;
+    }
+}
+
+.container:hover {
+    & .title {
+        text-decoration: underline;
+    }
+
+    & .skill {
+        background-color: var(--mantine-color-black);
+    }
+
+    & .skillLabel {
+        color: white;
+    }
+}
+
+
+.image {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    transition: transform 500ms ease;
+}
+
+
+.content {
+    height: 100%;
+    position: relative;
+    margin-top: -60px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    z-index: 1;
+    display: flex;
+    column-gap: 10px;
+    overflow: scroll;
+}
+
+.links {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    & a {
+        text-decoration: none;
+        color: var(--mantine-color-text);
+        @media (max-width: $mantine-breakpoint-sm) {
+            & p {
+                font-size: .7rem;
+
+            }
+
+            & svg {
+                width: 15px;
+
+            }
+        }
+
+
+    }
+}
+
+.title {
+    color: var(--mantine-color-white);
+    margin-bottom: rem(50px);
+    transition: .4s;
+    z-index: 1;
+    font-size: 40px;
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        font-size: 1.5rem;
+    }
+}
+
+.bodyText {
+    color: var(--mantine-color-dark-2);
+    margin-left: rem(7px);
+}
+
+.author {
+    color: var(--mantine-color-dark-2);
+}
+
+.skill {
+    padding: 5px 10px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 20px;
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        & svg {
+            width: 15px;
+        }
+    }
+
+}
+
+.skillLabel {
+    color: var(--mantine-color-black);
+    font-size: 1rem;
+    text-wrap: nowrap;
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        font-size: 0.7rem;
+
+    }
+}
