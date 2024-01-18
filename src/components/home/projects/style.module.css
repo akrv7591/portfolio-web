@@ -102,7 +102,7 @@
 .skillLabel {
     color: var(--mantine-color-black);
     font-size: 1rem;
-    text-wrap: nowrap;
+    white-space: nowrap;
 
     @media (max-width: $mantine-breakpoint-sm) {
         font-size: 0.7rem;

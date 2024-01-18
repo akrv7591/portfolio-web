@@ -1,5 +1,5 @@
-import {List, rem, Stack, Text, ThemeIcon, Title} from "@mantine/core";
-import {IconCheck} from "@tabler/icons-react";
+import {Button, Group, List, rem, Stack, Text, ThemeIcon, Title} from "@mantine/core";
+import {IconCheck, IconDownload} from "@tabler/icons-react";
 import styles from "@styles/css/introduce.module.css"
 
 export default function Introduce() {
@@ -41,6 +41,11 @@ export default function Introduce() {
           </List>
         </div>
       </div>
+      <Group justify={"flex-end"} mt={{base: "20px", md: "40px"}}>
+        <Button component={"a"} href={"/Resume-Abubakr.pdf"} download fw={"normal"} leftSection={<IconDownload stroke={1}/>} radius={"xl"} size={"lg"} w={{base: "100%", md: "auto"}}>
+          Download resume
+        </Button>
+      </Group>
 
     </Stack>
   )
