@@ -42,7 +42,7 @@ export default function Introduce() {
         </div>
       </div>
       <Group justify={"flex-end"} mt={{base: "20px", md: "40px"}}>
-        <Button component={"a"} href={"/Resume-Abubakr.pdf"} download fw={"normal"} leftSection={<IconDownload stroke={1}/>} radius={"xl"} size={"lg"} w={{base: "100%", md: "auto"}}>
+        <Button component={"a"} href={"/resume.pdf"} download rel="noopener noreferrer" fw={"normal"} leftSection={<IconDownload stroke={1}/>} radius={"xl"} size={"lg"} w={{base: "100%", md: "auto"}}>
           Download resume
         </Button>
       </Group>

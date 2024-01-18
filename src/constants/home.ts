@@ -1,11 +1,4 @@
-import {
-  IconBrandFacebook,
-  IconBrandGithub,
-  IconBrandInstagram,
-  IconBrandLinkedin,
-  IconBrandMysql,
-  IconBrandTwitter
-} from "@tabler/icons-react";
+import {IconBrandGithub, IconBrandLinkedin, IconBrandMysql, IconBrandTwitter} from "@tabler/icons-react";
 import {IoBriefcaseOutline, IoFileTrayFullOutline, IoHomeOutline, IoShapesOutline} from "react-icons/io5";
 import Introduce from "@components/home/introduce/Introduce.tsx";
 import Skills from "@components/home/skills/Skills.tsx";
@@ -19,42 +12,27 @@ export const USER_DETAIL = {
   lastname: "Khabebulloev",
   role: "I am a fullstack Web developer currently living in Busan. I enjoy learning new technologies",
   currentLocation: "Busan, South Korea",
-  socials: [{
-    id: 0,
-    label: "Facebook",
-    icon: IconBrandFacebook,
-    url: "#"
-  }, {
-    id: 1,
-    label: "LinkedIn",
-    icon: IconBrandLinkedin,
-    url: "#"
-  }, {
-    id: 2,
-    label: "Github",
-    icon: IconBrandGithub,
-    url: "#"
-  }, {
-    id: 3,
-    label: "Instagram",
-    icon: IconBrandInstagram,
-    url: "#"
-  }, {
-    id: 4,
-    label: "Twitter",
-    icon: IconBrandTwitter,
-    url: "#"
-  }],
-  socialLink: {
-    facebook: "",
-    linkedIn: "",
-    twitter: "",
-    dribble: "",
-    instagram: "",
-    github: "",
-  },
+  socials: [
+    {
+      id: 1,
+      label: "LinkedIn",
+      icon: IconBrandLinkedin,
+      url: "https://www.linkedin.com/in/abubakr-khabebulolev-35182b232/"
+    },
+    {
+      id: 2,
+      label: "Github",
+      icon: IconBrandGithub,
+      url: "https://github.com/akrv7591"
+    },
+    {
+      id: 4,
+      label: "Twitter",
+      icon: IconBrandTwitter,
+      url: "https://twitter.com/akrv7591"
+    }
+  ],
 };
-
 
 
 const frontendLanguages = [{

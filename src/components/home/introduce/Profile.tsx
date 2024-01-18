@@ -9,7 +9,7 @@ import Reveal from "@components/Reveal.tsx";
 export default function Profile() {
   return (
     <Reveal type={"fadeUp"} className={styles.root}>
-      <Card mih={{md: "500px", base: "calc(100vh - 150px)"}} withBorder shadow={"xl"} style={{overflow: "visible"}} bg={"var(--mantine-color-dark-6)"}>
+      <Card miw={"300px"} mih={{md: "500px", base: "calc(100vh - 150px)"}} withBorder shadow={"xl"} style={{overflow: "visible"}} bg={"var(--mantine-color-dark-6)"}>
         <Card.Section className={""}>
           <Reveal delay={1} type={"zoomInDown"}>
             <Image className={`${styles.image}`} src={ProfileImage} alt="profile-image"/>
@@ -24,7 +24,7 @@ export default function Profile() {
           </Text>
           <Group wrap={"nowrap"} justify={"center"} gap={"10px"}>
             {user.socials.map(social =>
-              <Link key={social.id} to={social.url}>
+              <Link key={social.id} to={social.url} target={"_blank"}>
                 <Tooltip label={social.label}>
                   <ActionIcon variant={"default"} size={"xl"} style={{borderRadius: "50%"}}>
                     <social.icon width={20} height={20} stroke={1}/>
