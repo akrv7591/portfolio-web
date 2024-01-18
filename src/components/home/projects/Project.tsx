@@ -19,10 +19,10 @@ export default function Project({project}: Props) {
     <Stack className={classes.container}>
       <Stack pos={"relative"} p={0}
              style={{border: "1px solid var(--mantine-color-dark-4)", borderRadius: "10px", overflow: "hidden"}}>
-        <Carousel loop>
+        <Carousel loop slideSize={"1000px"}>
           {project.images.map(image => (
-            <Carousel.Slide key={image}>
-              <Image alt={"subway-navigation-screenshots"} src={image}/>
+            <Carousel.Slide key={image} >
+              <Image alt={"subway-navigation-screenshots"} h={"50vh"} fit={"contain"} src={image}/>
             </Carousel.Slide>
           ))}
         </Carousel>

@@ -336,6 +336,7 @@ export const professionalProjects = [{
     '/projects/tta/ta-3.png',
     '/projects/tta/ta-4.png',
     '/projects/tta/ta-5.png',
+    '/projects/tta/ta-6.png',
   ],
   links: [],
   skills: [{
@@ -360,12 +361,7 @@ export const professionalProjects = [{
   endDate: "2023-10-01",
   role: "Backend developer",
   images: [
-    '/projects/tta/ta-0.png',
-    '/projects/tta/ta-1.png',
-    '/projects/tta/ta-2.png',
-    '/projects/tta/ta-3.png',
-    '/projects/tta/ta-4.png',
-    '/projects/tta/ta-5.png',
+    '/projects/sw/sw-0.png',
   ],
   links: [],
   skills: [{
