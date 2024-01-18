@@ -1,5 +1,5 @@
-import {Button, Group, List, rem, Stack, Text, ThemeIcon, Title} from "@mantine/core";
-import {IconCheck, IconDownload} from "@tabler/icons-react";
+import {Button, Group, List, Popover, rem, Stack, Text, ThemeIcon, Title} from "@mantine/core";
+import {IconCaretDown, IconCheck, IconDownload} from "@tabler/icons-react";
 import styles from "@styles/css/introduce.module.css"
 
 export default function Introduce() {
@@ -42,9 +42,45 @@ export default function Introduce() {
         </div>
       </div>
       <Group justify={"flex-end"} mt={{base: "20px", md: "40px"}}>
-        <Button component={"a"} href={"/resume.pdf"} download rel="noopener noreferrer" fw={"normal"} leftSection={<IconDownload stroke={1}/>} radius={"xl"} size={"lg"} w={{base: "100%", md: "auto"}}>
-          Download resume
-        </Button>
+        <Popover width={200} position="bottom" withArrow shadow="md">
+          <Popover.Target>
+            <Button
+              fw={"normal"}
+              rightSection={<IconCaretDown stroke={1}/>}
+              radius={"xl"} size={"lg"} w={{base: "100%", md: "auto"}}
+            >
+              Download resume
+            </Button>
+          </Popover.Target>
+          <Popover.Dropdown>
+            <Stack>
+              <Button
+                component={"a"}
+                href={"/Abubakr Khabebulolev(ENGLISH).pdf"}
+                download
+                justify={"flex-start"}
+                variant={"default"}
+                rel="noopener noreferrer"
+                fw={"normal"}
+                leftSection={<IconDownload stroke={1}/>}
+              >
+                English
+              </Button>
+              <Button
+                component={"a"}
+                href={"/Abubakr Khabebulolev(KOREAN).pdf"}
+                download
+                justify={"flex-start"}
+                variant={"default"}
+                rel="noopener noreferrer"
+                fw={"normal"}
+                leftSection={<IconDownload stroke={1}/>}
+              >
+                Korean
+              </Button>
+            </Stack>
+          </Popover.Dropdown>
+        </Popover>
       </Group>
 
     </Stack>
