@@ -270,6 +270,43 @@ export const careers = [{
 }]
 
 export const professionalProjects = [{
+  label: "BELL(벨)",
+  startDate: "2023-02-01",
+  endDate: "2024-01-01",
+  role: "Back-end developer",
+  images: [
+    '/projects/bell/b-6.png',
+    '/projects/bell/b-0.webp',
+    '/projects/bell/b-1.webp',
+    '/projects/bell/b-2.webp',
+    '/projects/bell/b-3.webp',
+    '/projects/bell/b-4.webp',
+    '/projects/bell/b-5.webp',
+  ],
+  links: [{
+    label: "Homepage",
+    link: "http://www.bell-meta.com/"
+  },{
+    label: "Google Play",
+    link: "https://play.google.com/store/apps/details?id=kr.bell&hl=en&gl=US"
+  }],
+  skills: [{
+    label: "NodeJS",
+    icon: null
+  }, {
+    label: "Typescript",
+    icon: svgIcons.Typescript
+  }, {
+    label: "MySQL",
+    icon: null
+  }, {
+    label: "Redis",
+    icon: null
+  }, {
+    label: "Socket.IO",
+    icon: null
+  }]
+}, {
   label: "지하철 내비게이션",
   startDate: "2022-02-01",
   endDate: "2023-05-01",
