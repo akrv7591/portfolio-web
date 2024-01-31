@@ -442,7 +442,7 @@ export const professionalProjects = [{
     label: "Typescript",
     icon: svgIcons.Typescript
   }, {
-    label: "Nui",
+    label: "Mui",
     icon: null
   }
   ]
