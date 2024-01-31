@@ -56,7 +56,7 @@ export default function Introduce() {
             <Stack>
               <Button
                 component={"a"}
-                href={"/Abubakr Khabebulolev(ENGLISH).pdf"}
+                href={"/Khabebulloev-abubakr-en.pdf"}
                 download
                 justify={"flex-start"}
                 variant={"default"}
@@ -66,18 +66,18 @@ export default function Introduce() {
               >
                 English
               </Button>
-              <Button
-                component={"a"}
-                href={"/Abubakr Khabebulolev(KOREAN).pdf"}
-                download
-                justify={"flex-start"}
-                variant={"default"}
-                rel="noopener noreferrer"
-                fw={"normal"}
-                leftSection={<IconDownload stroke={1}/>}
-              >
-                Korean
-              </Button>
+              {/*<Button*/}
+              {/*  component={"a"}*/}
+              {/*  href={"/Abubakr Khabebulolev(KOREAN).pdf"}*/}
+              {/*  download*/}
+              {/*  justify={"flex-start"}*/}
+              {/*  variant={"default"}*/}
+              {/*  rel="noopener noreferrer"*/}
+              {/*  fw={"normal"}*/}
+              {/*  leftSection={<IconDownload stroke={1}/>}*/}
+              {/*>*/}
+              {/*  Korean*/}
+              {/*</Button>*/}
             </Stack>
           </Popover.Dropdown>
         </Popover>
