@@ -393,7 +393,7 @@ export const professionalProjects = [{
     icon: null
   }]
 }, {
-  label: "1등급( 소프트웨어품질인증의 최고등급)",
+  label: "1등급(소프트웨어품질인증의 최고등급)",
   startDate: "2023-03-01",
   endDate: "2023-10-01",
   role: "Backend developer",
@@ -417,6 +417,35 @@ export const professionalProjects = [{
     label: "Onvif Camera controlling",
     icon: null
   }]
+
+}, {
+  label: "MSS Platform",
+  startDate: "2022-04-01",
+  endDate: "2022-08-01",
+  role: "FrontEnd Developer",
+  images: [
+    '/projects/mss/mss-0.png',
+    '/projects/mss/mss-1.png',
+    '/projects/mss/mss-2.png',
+    '/projects/mss/mss-3.png',
+    '/projects/mss/mss-4.png',
+    '/projects/mss/mss-5.png',
+    '/projects/mss/mss-6.png',
+    '/projects/mss/mss-7.png',
+  ],
+  links: [],
+  skills: [
+    {
+    label: "React",
+    icon: svgIcons.React
+  }, {
+    label: "Typescript",
+    icon: svgIcons.Typescript
+  }, {
+    label: "Nui",
+    icon: null
+  }
+  ]
 
 }]
 
