@@ -23,15 +23,13 @@ export default function Skill(props: Props) {
                   <IconBolt stroke={1} color={"var(--mantine-primary-color-filled)"}/>
                 )}>
                 <Group>
-                  {item.items.map((i, index) => (
-                    <Reveal type={"zoomInDown"} delay={index / 5} key={i.label}>
-                      <Card p={"xs"} bg={"var(--mantine-color-dark-5)"}>
-                        <Group>
-                          {i.icon && <i.icon width={20} height={20}/>}
-                          <Text size={"sm"}>{i.label}</Text>
-                        </Group>
-                      </Card>
-                    </Reveal>
+                  {item.items.map((i) => (
+                    <Card p={"xs"} bg={"var(--mantine-color-dark-5)"}>
+                      <Group>
+                        {i.icon && <i.icon width={20} height={20}/>}
+                        <Text size={"sm"}>{i.label}</Text>
+                      </Group>
+                    </Card>
                   ))}
                 </Group>
               </Timeline.Item>
