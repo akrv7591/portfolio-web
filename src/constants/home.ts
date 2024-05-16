@@ -463,25 +463,25 @@ export const projects = [{
 
 export const content = [
   {
-    id: 0,
+    id: "introduce",
     label: "Introduce",
     icon: IoHomeOutline,
     component: Introduce
   },
   {
-    id: 1,
+    id: "skills",
     label: "Skills",
     icon: IoShapesOutline,
     component: Skills
   },
   {
-    id: 2,
+    id: "career",
     label: "Career",
     icon: IoBriefcaseOutline,
     component: Careers
   },
   {
-    id: 5,
+    id: "projects",
     label: "Projects",
     icon: IoFileTrayFullOutline,
     component: Projects
