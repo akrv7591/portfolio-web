@@ -285,7 +285,7 @@ export const professionalProjects = [{
   ],
   links: [{
     label: "Homepage",
-    link: "http://www.bell-meta.com/"
+    link: "https://carebell.kr/"
   },{
     label: "Google Play",
     link: "https://play.google.com/store/apps/details?id=kr.bell&hl=en&gl=US"
