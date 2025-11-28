@@ -288,7 +288,7 @@ export const professionalProjects = [{
     link: "https://carebell.kr/"
   },{
     label: "Google Play",
-    link: "https://play.google.com/store/apps/details?id=kr.bell&hl=en&gl=US"
+    link: "https://play.google.com/store/apps/details?id=kr.carebell&hl=en"
   }],
   skills: [{
     label: "NodeJS",
@@ -451,13 +451,9 @@ export const professionalProjects = [{
 
 
 export const projects = [{
-  label: "Professional",
-  items: professionalProjects
-},
-//   {
-//   label: "Personal",
-//   items: []
-// }
+    label: "Professional",
+    items: professionalProjects
+  },
 ]
 
 

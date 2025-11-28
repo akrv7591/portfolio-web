@@ -8,7 +8,7 @@ const RootRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={"/*"} element={<Public />}>
+        <Route path={""} element={<Public />}>
           <Route index element={<PublicRouter/>} />
           <Route path={"admin"} element={<ProtectedRouter/>} />
           <Route path="*" element={<NotFound/>}/>

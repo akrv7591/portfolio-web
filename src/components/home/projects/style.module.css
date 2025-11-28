@@ -1,5 +1,7 @@
 .container {
     width: 100%;
+    position: relative;
+    padding: 0;
     @media (max-width: $mantine-breakpoint-sm) {
         width: 80vw;
     }

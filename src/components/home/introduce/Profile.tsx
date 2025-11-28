@@ -19,7 +19,7 @@ export default function Profile() {
           <Text mt={"md"} ta={"center"} fw="bold" size={"2rem"} lh={"2rem"} variant="gradient"
                 gradient={{from: 'brand', to: 'white'}}>{user.lastname} {user.firstname}</Text>
           <Text ta={"center"}>
-            Full Stack Web Developer with {new Date().getFullYear() - 2021}+ years experience, skilled
+            Full Stack Web Developer with {new Date().getFullYear() - 2020}+ years experience, skilled
             in <Code>React</Code>, <Code>Node.js</Code>, <Code>Python</Code>, and <Code>Typescript</Code>.
           </Text>
           <Group wrap={"nowrap"} justify={"center"} gap={"10px"}>

@@ -14,7 +14,7 @@ export default function Skill(props: Props) {
       <Stack mt={"md"} style={{overflow: "hidden"}}>
         <Timeline bulletSize={"25px"}>
           {props.skill.items.map((item, i) => (
-            <Reveal type={"fadeUp"} key={item.label} delay={i / 5}>
+            <Reveal type={"fadeUp"} key={item.label} delay={i / 20}>
               <Timeline.Item
                 title={(
                   <Text c="dimmed">{item.label}</Text>
