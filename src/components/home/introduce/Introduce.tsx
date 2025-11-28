@@ -56,7 +56,7 @@ export default function Introduce() {
             <Stack>
               <Button
                 component={"a"}
-                href={"/khabebulloev-abubakr.pdf"}
+                href={"/abubakr_resume.pdf"}
                 download
                 justify={"flex-start"}
                 variant={"default"}
